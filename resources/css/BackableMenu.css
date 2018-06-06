@@ -1,0 +1,13 @@
+.button {
+	-fx-min-height: 40;
+	-fx-min-width: 120;
+	-fx-background-color: #ba68c8;
+}
+
+.button:hover {
+	-fx-background-color: #e1bee7;
+}
+
+#content {
+	-fx-padding: 0 0 60 0;
+}

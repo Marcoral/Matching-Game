@@ -1,0 +1,28 @@
+.button {
+	-fx-min-height: 80;
+	-fx-min-width: 250;
+}
+.button-first-row {
+	-fx-background-color: #9fa8da;
+}
+.button-first-row:hover {
+	-fx-background-color: #90caf9;
+}
+.button-second-row {
+	-fx-background-color: #7986cb;
+}
+.button-second-row:hover {
+	-fx-background-color: #64b5f6;
+}
+.button-third-row {
+	-fx-background-color: #5c6bc0;
+}
+.button-third-row:hover {
+	-fx-background-color: #42a5f5;
+}
+.button-fourth-row {
+	-fx-background-color: #3f51b5;
+}
+.button-fourth-row:hover {
+	-fx-background-color: #2196f3;
+}

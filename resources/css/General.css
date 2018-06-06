@@ -1,0 +1,22 @@
+.button {
+	-fx-font-weight: bold;
+	-fx-font-size: 16;
+
+	-fx-border-color: #000000;
+	-fx-border-width: 2;
+}
+.button:hover {
+	-fx-font-size: 20;
+}
+
+.layout-of-border {
+  -fx-background-color: #673ab7;
+  -fx-border-color: #000000;
+  -fx-padding: 15;
+  -fx-border-width: 4;
+}
+.layout-of-inside {
+  -fx-background-color: #b39ddb;
+  -fx-border-color: #000000;
+  -fx-border-width: 4;
+}

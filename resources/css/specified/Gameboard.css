@@ -1,0 +1,16 @@
+#tile-ingame {
+    -fx-border-color: #371f61;
+    -fx-border-radius: 10;
+}
+#tile-ingame:hover {
+	-fx-border-color: #673ab7;
+    -fx-border-radius: 10;
+}
+#tile-revealed {
+	-fx-border-color: #f4ff81;
+    -fx-border-radius: 10;
+}
+#tile-collected {
+	-fx-border-color: #5ec23d;
+    -fx-border-radius: 10;
+}
