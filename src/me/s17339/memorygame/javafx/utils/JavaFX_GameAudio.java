@@ -32,10 +32,6 @@ public class JavaFX_GameAudio {
 	private static Map<GameSong, Media> songs = new EnumMap<>(GameSong.class);
 	private static MediaPlayer currentSong;
 	public static void playSong(GameSong song, DoubleProperty volumeProperty) {
-		if(JavaFX_GameAudio.songs == null && JavaFX_GameAudio.currentSong != null) {
-			JavaFX_GameAudio.currentSong.stop();
-			JavaFX_GameAudio.currentSong = null;
-		}
 		Media media = songs.get(song);
 		if(media == null) {
 			String path = ResourcesExplorer.class.getResource(SONGS_PATH + song.getPath() + ".mp3").toExternalForm();

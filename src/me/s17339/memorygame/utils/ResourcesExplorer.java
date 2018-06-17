@@ -3,6 +3,7 @@ package me.s17339.memorygame.utils;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.net.URLDecoder;
 import java.util.Enumeration;
 import java.util.function.Consumer;
 import java.util.jar.JarEntry;
@@ -36,7 +37,10 @@ public class ResourcesExplorer {
 	
 	public static void processAllEntriesInDirectory(String directory, Consumer<JarQueryResult> jarCase, Consumer<File> IDECase) {
 		try {
-			File jarFile = new File(ResourcesExplorer.class.getProtectionDomain().getCodeSource().getLocation().getPath());
+			String jarpath = ResourcesExplorer.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+			String decodedPath = URLDecoder.decode(jarpath, "UTF-8");
+			File jarFile = new File(decodedPath);
+
 			if (jarFile.isFile()) { // Run with JAR file
 				JarFile jar = new JarFile(jarFile);
 				Enumeration<JarEntry> entries = jar.entries();
